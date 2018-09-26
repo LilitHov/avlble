@@ -1,5 +1,4 @@
 footer {
-  padding-bottom: 25px;
 
   .soc-icons {
     @include flex;
@@ -7,37 +6,43 @@ footer {
     padding-bottom: 15px;
 
     li {
-      @include transition;
-      width: 46px;
-      height: 46px;
-      background: $color-secondary;
-      border-radius: 50%;
-      line-height: 46px;
-      text-align: center;
-      margin-right: 19px;
-      cursor: pointer;
+      padding-right: 19px;
 
       &:last-child {
         margin-right: 0;
       }
 
-      &:hover {
-        opacity: 0.8;
-      }
-
       a {
+        @include transition;
+        display: inline-block;
+        width: 46px;
+        height: 46px;
+        background: $color-secondary;
+        border-radius: 50%;
+        line-height: 50px;
+        text-align: center;
         font-size: 24px;
         color: #FFFFFF;
+
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
   }
 
   .widgets {
     @include flex;
-    margin-top: 57px;
+    padding-top: 57px;
+    padding-bottom: 25px;
 
     .widget {
-      margin-right: 17%;
+      width: 25%;
+      padding-right: 15px;
+
+      &:last-child {
+        padding-right: 0;
+      }
 
       .logo {
         @include transition;
@@ -62,21 +67,19 @@ footer {
         margin-top: 13px;
       }
 
-      &:last-child {
-        margin-right: 0;
-      }
-
       ul li {
-        @include transition;
-        margin-top: 12px;
-        margin-bottom: 12px;
-        font-size: 19px;
+        padding-top: 12px;
+        padding-bottom: 12px;
 
-        &:hover {
-          color: $color-secondary;
+        a {
+          @include transition;
+          font-size: 19px;
+
+          &:hover {
+            color: $color-secondary;
+          }
         }
       }
     }
   }
 }
-

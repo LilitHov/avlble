@@ -1,0 +1,77 @@
+.filter {
+  background-color: #77787a;
+
+  form {
+    @include flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    .input-group.search {
+      width: 100%;
+      max-width: 803px;
+
+      input {
+        width: 100%;
+      }
+    }
+
+    .input-group.date {
+      position: relative;
+
+      &:after {
+        content: '\e90a';
+        font-family: 'icomoon' !important;
+        position: absolute;
+        color: #929497;
+        font-size: 32px;
+        right: 17px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+/*
+       .search {
+
+         input {
+           max-width: 795px;
+           width: 100%;
+           padding: 18px 13px;
+
+
+         }
+       }
+
+       .date {
+
+         label {
+
+           min-height: 53px;
+           min-width: 117px;
+           width: 100%;
+
+
+           padding-left: 5px;
+           padding-right: 5px;
+
+           i {
+
+           }
+
+
+         }
+       }
+
+       .talent-btn {
+
+         padding-left: 5px;
+         padding-right: 5px;
+
+         button {
+           white-space: nowrap;
+
+
+         }
+       }*/

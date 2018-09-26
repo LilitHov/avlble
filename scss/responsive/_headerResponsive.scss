@@ -8,32 +8,6 @@
         max-width: 150px;
       }
     }
-
-    .bottom {
-
-      form {
-        @include flex-wrap;
-        @include content-center;
-
-        .form-buttons {
-          @include flex-wrap;
-          @include space-between;
-
-          .date {
-            width: calc(50% - 5px);
-          }
-
-          .talent-btn {
-            margin-right: auto;
-            margin-left: auto;
-          }
-        }
-
-        .item {
-          margin-bottom: 15px;
-        }
-      }
-    }
   }
 }
 
@@ -72,36 +46,6 @@
           li {
             font-size: 14px;
           }
-        }
-      }
-    }
-
-    .bottom {
-
-       form {
-
-        .search-group {
-
-          input {
-            padding: 12px 13px 11px 13px;
-          }
-        }
-
-        .date {
-
-          label {
-            min-height: 41px;
-            min-width: 70px;
-            font-size: 14px;
-
-            i {
-              font-size: 20px;
-            }
-          }
-        }
-
-        .talent-btn {
-          min-height: 41px;
         }
       }
     }

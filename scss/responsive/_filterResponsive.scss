@@ -1,0 +1,28 @@
+@media (max-width: 1024px) {
+
+  .filter {
+
+    form {
+      @include flex-wrap;
+
+      .input-group.search {
+        max-width: none;
+      }
+
+      .input-group.date {
+        width: 50%;
+        margin-top: 15px;
+        padding-right: 11px;
+
+        &:after {
+          right: 24px;
+        }
+      }
+
+      .input-group.btn {
+        margin: 15px auto 0;
+
+      }
+    }
+  }
+}

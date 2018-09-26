@@ -1,6 +1,6 @@
 body {
   font-family: $font-primary;
-  font-size: $font-size-sm;
+  font-size: 14px;
   color: $color-primary;
   background-color: #ffffff;
   line-height: 1.5;
@@ -43,15 +43,64 @@ body {
   @include content-center;
 }
 
-.btn {
-  width: 100%;
-  background: #ffffff;
-  font-family: $font-primary;
+.input-group {
+  padding-right: 3px;
+
+  input, button {
+    @include transition;
+    border: 1px solid #dadadb;
+    text-transform: uppercase;
+    color: $color-secondary;
+    font-family: $font-primary;
+    font-size: 25px;
+    background: #ffffff;
+    height: 55px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    &:hover {
+      border-color: $color-secondary;
+    }
+  }
+
+  input {
+    &::-webkit-input-placeholder {
+      font-family: $font-primary;
+      color: $color-secondary;
+    }
+    &::-moz-placeholder {
+      font-family: $font-primary;
+      color: $color-secondary;
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+      font-family: $font-primary;
+      color: $color-secondary;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      font-family: $font-primary;
+      color: $color-secondary;
+    }
+  }
 }
 
 .btn.sm {
-  max-width: $btn-width-sm;
-  min-height: $btn-height-sm;
+
+  button {
+    max-width: $btn-sm;
+  }
+}
+
+.input-group.sm {
+
+  input {
+    min-width: $input-sm;
+    width: 100%;
+  }
+}
+
+.white-space {
+  white-space: nowrap;
 }
 
 h2 {
@@ -64,10 +113,6 @@ h3 {
 
 h4 {
   font-size: 19px;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .bg-primary {
