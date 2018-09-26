@@ -1,0 +1,82 @@
+footer {
+  padding-bottom: 25px;
+
+  .soc-icons {
+    @include flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    li {
+      @include transition;
+      width: 46px;
+      height: 46px;
+      background: $color-secondary;
+      border-radius: 50%;
+      line-height: 46px;
+      text-align: center;
+      margin-right: 19px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      a {
+        font-size: 24px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .widgets {
+    @include flex;
+    margin-top: 57px;
+
+    .widget {
+      margin-right: 17%;
+
+      .logo {
+        @include transition;
+        max-width: 107px;
+        display: block;
+
+        img {
+          width: 100%;
+        }
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .title {
+        font-family: $font-bold;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-top: 13px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      ul li {
+        @include transition;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        font-size: 19px;
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}
+

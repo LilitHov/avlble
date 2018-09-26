@@ -1,0 +1,48 @@
+.slider {
+
+  .owl-carousel.owl-drag {
+
+    .owl-item {
+      position: relative;
+      height: 614px;
+
+      .list {
+        @include bg-img-props;
+        height: 100%;
+
+        .description {
+          position: absolute;
+          color: #FFFFFF;
+          font-size: $font-size-lg;
+          top: 56px;
+          padding-right: 15px;
+        }
+      }
+    }
+
+    .owl-dots {
+      position: absolute;
+      bottom: 33px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+
+      .owl-dot {
+        background: #ffffff;
+        height: 13px;
+        width: 13px;
+        border-radius: 50%;
+        margin-right: 13px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .owl-dot.active {
+        background: $color-secondary;
+      }
+    }
+  }
+}

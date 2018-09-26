@@ -1,0 +1,36 @@
+@media (max-width: 780px) {
+
+  footer {
+
+    .widgets {
+
+      .widget {
+
+        ul li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+
+  footer {
+
+    .soc-icons {
+      @include content-center;
+    }
+
+    .widgets {
+      @include direction-column;
+      @include align-center;
+      text-align: center;
+
+      .widget {
+        margin-right: 0;
+
+      }
+    }
+  }
+}
