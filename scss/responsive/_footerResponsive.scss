@@ -3,26 +3,9 @@
   footer {
 
     .widgets {
-      @include space-between;
 
       .widget {
         width: 33.3%;
-      }
-    }
-  }
-}
-
-@media (max-width: 780px) {
-
-  footer {
-
-    .widgets {
-
-      .widget {
-
-        ul li {
-          font-size: 14px;
-        }
       }
     }
   }
@@ -40,10 +23,25 @@
       @include direction-column;
       @include align-center;
       text-align: center;
+      padding-top: 40px;
 
       .widget {
-        margin-right: 0;
+        width: 100%;
+        padding-right: 0;
 
+        .logo {
+          margin-right: auto;
+          margin-left: auto;
+        }
+
+        ul li {
+          padding-top: 6px;
+          padding-bottom: 6px;
+
+          a {
+            font-size: 16px;
+          }
+        }
       }
     }
   }

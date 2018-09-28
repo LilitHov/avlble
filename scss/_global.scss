@@ -54,9 +54,7 @@ body {
     font-family: $font-primary;
     font-size: 25px;
     background: #ffffff;
-    height: 55px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 13px 15px;
 
     &:hover {
       border-color: $color-secondary;
@@ -104,15 +102,20 @@ body {
 }
 
 h2 {
-  font-size: $font-size-md;
+  font-size: $font-size-xl;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: $font-size-lg;
 }
 
 h4 {
-  font-size: 19px;
+  font-size: $font-size-md;
+}
+
+h5  {
+  font-size: $font-size-sm;
+  font-weight: 300;
 }
 
 .bg-primary {

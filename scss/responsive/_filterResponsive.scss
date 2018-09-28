@@ -26,3 +26,32 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+
+  .filter {
+
+    form {
+
+      .input-group {
+          input,button {
+            font-size: 16px;
+            padding: 10px;
+          }
+      }
+
+
+      .input-group.date {
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        &:after {
+          right: 24px;
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}

@@ -1,18 +1,59 @@
-@media (max-width: 1200px) {
+@media (max-width: 1230px) {
 
   .portfolio {
-    margin-top: 50px;
 
-    .portfolio-list {
+    .figures {
 
-      .item {
-        width: calc(33.3% - 5px);
-        margin-bottom: 50px;
+      .figure {
+        width: 33.3%;
+        padding-bottom: 30px;
 
-        .article-title {
+        &:nth-child(n) {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
 
-          h3 {
-            font-size: 18px;
+        &:nth-child(3n) {
+          padding-right: 0;
+        }
+
+        &:nth-child(3n + 1) {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .portfolio {
+
+    .figures {
+
+      .figure {
+        width: 50%;
+
+        &:nth-child(n) {
+          padding-right: 7px;
+          padding-left: 7px;
+        }
+
+        &:nth-child(even) {
+          padding-right: 0;
+        }
+
+        &:nth-child(odd) {
+          padding-left: 0;
+        }
+
+        .figure-caption {
+
+          h4 {
+            font-size: 19px;
+          }
+
+          h5 {
+            font-size: 16px;
           }
         }
       }
@@ -20,61 +61,21 @@
   }
 }
 
-@media (max-width: 900px) {
-
+@media (max-width: 640px) {
   .portfolio {
 
-    .title {
-      font-size: 24px;
-    }
+    .figures {
 
-    .portfolio-list {
+      .figure {
+        width: 100%;
 
-      .item {
-        max-width: none;
-        width: calc(50% - 5px);
-
-        .photo {
-          height: 170px;
+        &:nth-child(n) {
+          padding-right: 0;
+          padding-left: 0;
         }
-      }
-    }
-  }
-}
-
-@media (max-width: 650px) {
-
-  .portfolio {
-
-    .portfolio-list {
-
-      .item {
 
         .photo {
-
-          .portfolio-hover-content {
-            height: 100%;
-
-            .review {
-              @include direction-column;
-
-              ul {
-                &:last-child {
-                  margin-left: 0;
-                  margin-top: 15px;
-                }
-              }
-            }
-
-            .description {
-              @include direction-column;
-
-              .subscribe {
-                margin-left: 0;
-                margin-top: 5px;
-              }
-            }
-          }
+          height: 250px;
         }
       }
     }
@@ -82,30 +83,27 @@
 }
 
 @media (max-width: 480px) {
-
   .portfolio {
 
-    .title {
-      font-size: 20px;
-    }
+    .figures {
 
-    .portfolio-list {
-
-      .item {
-        width: 100%;
-        max-width: none;
+      .figure {
 
         .photo {
+          height: 200px;
 
           .portfolio-hover-content {
-            padding-top: 20px;
-          }
-        }
 
-        .article-title {
+            .review {
+              @include direction-column;
 
-          h3 {
-            font-size: 16px;
+              ul {
+
+                &:first-child {
+                  margin-bottom: 8px;
+                }
+              }
+            }
           }
         }
       }
